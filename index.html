@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #div1 {
+        border: 3px solid black;
+        height: 300px;
+        width: 350px;
+        margin: 25px;
+        text-align: center;
+        white-space: nowrap
+      }
+      h1 {
+        margin-top: -25px;
+        font-size: 35px;
+      }
+      .inside-para {
+        margin-top: -20px;
+        font-size: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      #hover-para {
+        border: 2px solid black;
+        width: 440px;
+        height: 110px;
+        background-color: aqua;
+        font-size: 18px;
+        text-align: center;
+        padding: 10px;
+        display: none;
+      }
+      #div1:hover + #hover-para {
+        display: block;
+      }
+      span {
+        color: blue;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      #div2 {
+        border: 3px solid black;
+        
+        position: absolute;
+        top: 68px;
+        left: 650px;
+        height: 290px;
+        width: 350px;
+        text-align: center;
+        white-space: nowrap;
+      
+      }
+      img {
+        border-radius: 50%;
+        padding-top: 5px;
+      }
+      .h2 {
+        padding-top: 15px;
+      }
+      .inside-para1 {
+        margin-top: -20px;
+        font-size: 18px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      #hover-para1 {
+        border: 2px solid black;
+        width: 440px;
+        height: 125px;
+        background-color: aqua;
+        font-size: 18px;
+        text-align: center;
+        padding: 10px;
+        display: none;
+        margin: 10px 0px 0px 600px;
+      }
+      #div2:hover + #hover-para1 {
+        display: block;
+      }
+      .main-heading {
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="main-heading">Divs  with images and description using text overflow property</h1>
+    <div id="div1">
+      <img
+        src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-320w,f_auto,q_auto:best/rockcms/2024-04/AMAZON-36441f.jpg"
+        alt="AppleAir-Tag"
+        height="200"
+        width="200"
+      />
+      <h1>Apple AirTag</h1>
+      <p class="inside-para">
+        <span>"Lose your knack for losing things."</span><br />To know more
+        about this Apple AirTag,<br />then over the curser point on paragraph
+        text...
+      </p>
+    </div>
+    <p id="hover-para">
+      AirTag is a super-easy way to keep track of your stuff.Attach one to your
+      keys. Put another in your backpack.And just like that, they’re on your
+      radar in the Find My app,where you can also track down your Apple devices
+      and keep up with friends and family.
+    </p>
+    <div id="div2">
+      <img
+        src="https://images.indianexpress.com/2024/02/amazon-alexa-echo-featured.jpg"
+        alt="AppleAir-Tag"
+        height="170"
+        width="170"
+      />
+      <h1 class="h2">Amazon Alexa</h1>
+      <p class="inside-para1">
+        <span>"Learn more about Alexa features."</span><br />To know more about
+        this Amazon Alexa,<br />then over the curser point on paragraph text...
+      </p>
+    </div>
+    <p id="hover-para1">
+      Amazon Alexa is a voice-controlled virtual assistant developed by Amazon,
+      first introduced in November 2014 with the Amazon Echo smart speaker.
+      Alexa leverages natural language processing (NLP) and artificial
+      intelligence (AI) to perform a wide range of tasks, making it a versatile
+      and popular assistant in smart home ecosystems.
+    </p>
+  </body>
+</html>
